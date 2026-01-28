@@ -2,16 +2,16 @@ name: reusable workflow
 
 on:
   workflow_call:
-   inputs:
-     VAR:
-      required: true
-      type: string
+    inputs:
+      VAR:
+        required: true
+        type: string
 
 jobs:
- reusable-workflow:
-  runs-on: ubuntu-latest
-  steps:
-    - name: exec-reusable-workflow
-      run: echo "Recieved build status is: ${{ inputs.VAR }}"
+  reusable-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: exec-reusable-workflow
+        run: echo "Recieved build status is: ${{ inputs.VAR }}"
 
       
