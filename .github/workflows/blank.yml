@@ -12,6 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: exec-reusable-workflow
-        run: echo "Recieved build status is: ${{ inputs.VAR }}"
-
-      
+        run: echo "Received build status is= ${{ inputs.VAR }}"
