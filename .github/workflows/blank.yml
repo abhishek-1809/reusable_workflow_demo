@@ -12,6 +12,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - name: exec-reusable-workflow
-      run: echo "this is inside reusable workflow"
+      run: echo "Recieved build status is: ${{ inputs.VAR }}"
 
       
