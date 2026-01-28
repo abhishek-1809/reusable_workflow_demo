@@ -1,0 +1,17 @@
+name: reusable workflow
+
+on:
+  workflow_call:
+   inputs:
+     VAR:
+      required: true
+      type: string
+
+jobs:
+ reusable-workflow:
+  runs-on: ubuntu-latest
+  steps:
+    - name: exec-reusable-workflow
+     run: echo "this is inside reusable workflow"
+
+      
